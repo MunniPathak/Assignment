@@ -1,0 +1,6 @@
+module Pods_AssignmentView_AssignmentViewTests {
+  umbrella header "Pods-AssignmentView-AssignmentViewTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
