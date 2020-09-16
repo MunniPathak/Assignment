@@ -1,0 +1,31 @@
+const AppColors = {
+    colorWhite: 'white',
+    colorBlack: 'black',
+    colorBackgroundPrimary: '#F6F8FA',
+    colorLightGreen: "#bad537",
+    colorGrey: "#716B70",
+    colorLightGrey: "#D5D0D4",
+    colorBackground: '#F6F8FA',
+    colorPurple: '#78266A',
+    colorLine: '#eeeeee',
+    colorTransparent: 'transparent',
+    colorBlue: 'blue',
+    colorGreen: '#ADC927',
+    lightGreen: '#FDFFEF',
+    colorParrot: "#FDFFF2",
+    colorRed: "#FF4E4E",
+    colorCalendarBg: "#eff9e5",
+    colorCalendarBorder: "#7bd64e",
+    colorSkyblue: "#d8f6fe",
+    colorSkyblueBorder: "#86c8ff",
+    colorLightOrange: "#FFF4D9",
+    colorOrange: "orange",
+    colorLightRed: "#FFEDED",
+    colorLightPink: "#FFD9F7",
+    colorPink: '#FF66E0',
+    colorLimeGreen: "#e3f1e1",
+    colorReview: "#b58b00",
+    colorOptionText: "#5e681e"
+};
+
+export default AppColors;
