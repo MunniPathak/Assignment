@@ -121,7 +121,7 @@ export default class HomeScreen extends Component {
                   <View>
                      <Image
                         style={{
-                           margin:5,
+                           margin: 5,
                            justifyContent: 'flex-start',
                            padding: 5,
                            position: 'absolute',
@@ -132,11 +132,11 @@ export default class HomeScreen extends Component {
                         }}
                         source={AppImages.favourites} />
                   </View>
-                  <View style={{ padding: 10, flexDirection: 'row',top:2 }}>
+                  <View style={{ padding: 10, flexDirection: 'row', top: 2 }}>
                      <View>
-                        <Text style={{fontSize:18,}}>{item.name}</Text>
+                        <Text style={{ fontSize: 18, }}>{item.name}</Text>
                         <Text numberOfLines={3}
-                           style={{color: 'gray',} }>{item.category}</Text>
+                           style={{ color: 'gray', }}>{item.category}</Text>
                         <View style={{ flexDirection: 'row' }}>
                            <Image
                               style={{
@@ -150,10 +150,10 @@ export default class HomeScreen extends Component {
                         </View>
                      </View>
 
-                     <View style={{ flexDirection: 'column',marginLeft:20, }}>
+                     <View style={{ flexDirection: 'column', marginLeft: 20, }}>
 
                         <Text style={{ color: 'gray', margin: 5 }}>{item.time}</Text>
-                        <Text style={{ color: 'green', margin: 5 ,left:20}}>{item.price}</Text>
+                        <Text style={{ color: 'green', margin: 5, left: 20 }}>{item.price}</Text>
                      </View>
                   </View>
                </TouchableOpacity>
@@ -175,8 +175,8 @@ export default class HomeScreen extends Component {
                {this.renderTopIcons()}
             </View>
 
-            <View style={{  backgroundColor: 'white' }}>
-               <View style={{ margin: 10 ,left:10}}>
+            <View style={{ backgroundColor: 'white' }}>
+               <View style={{ margin: 10, left: 10 }}>
                   <Text style={{ fontSize: 24 }}>
                      Within 30mins
                      </Text>
@@ -198,25 +198,25 @@ export default class HomeScreen extends Component {
 
 
                <View>
-               <View style={{ margin: 10 ,left:10 }}>
-                  <Text style={{ fontSize: 24 }}>
-                     Popular near by you
+                  <View style={{ margin: 10, left: 10 }}>
+                     <Text style={{ fontSize: 24 }}>
+                        Popular near by you
                      </Text>
-               </View>
-
-               <ScrollView contentContainerStyle={{}}
-                  horizontal={true}
-                  showsHorizontalScrollIndicator={false}>
-                  <View style={{ marginLeft: 20 }}>
-                     <FlatList
-                        showsVerticalScrollIndicator={false}
-                        data={this.state.foodItem}
-                        numColumns={6}
-                        renderItem={this.renderItem}
-                        keyExtractor={(item, index) => String(index)}
-                     />
                   </View>
-               </ScrollView>
+
+                  <ScrollView contentContainerStyle={{}}
+                     horizontal={true}
+                     showsHorizontalScrollIndicator={false}>
+                     <View style={{ marginLeft: 20 }}>
+                        <FlatList
+                           showsVerticalScrollIndicator={false}
+                           data={this.state.foodItem}
+                           numColumns={6}
+                           renderItem={this.renderItem}
+                           keyExtractor={(item, index) => String(index)}
+                        />
+                     </View>
+                  </ScrollView>
                </View>
             </View>
          </SafeAreaView>
